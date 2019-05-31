@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>flex 布局</title>
+  </head>
+  <style>
+    .container {
+      display: flex;
+    }
+    .center {
+      width: 100%;
+      order: 2;
+      background: red;
+    }
+    .left {
+      width: 200px;
+      order: 1;
+      background: green;
+      flex-shrink: 0;
+    }
+    .right {
+      width: 200px;
+      order: 3;
+      background: blue;
+      flex-shrink: 0;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <!-- 优先渲染 -->
+      <div class="center">
+        center
+      </div>
+      <div class="left">
+        left
+      </div>
+      <div class="right">
+        right
+      </div>
+    </div>
+  </body>
+</html>

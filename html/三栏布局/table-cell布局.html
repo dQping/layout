@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>table-cell 布局</title>
+  </head>
+  <style>
+    .container {
+      overflow: hidden;
+      width: 100%;
+    }
+    .container > div {
+      display: table-cell;
+      height: 100px;
+    }
+    .left {
+      width: 200px;
+      background: green;
+      min-width: 200px;
+    }
+    .right {
+      width: 200px;
+      background: blue;
+      min-width: 200px;
+    }
+    .center {
+      width: 100%;
+      background: red;
+    }
+  </style>
+  <body>
+    <header>header</header>
+    <div class="container">
+      <div class="left">
+        left
+      </div>
+      <!-- 这时的center要放在中间 -->
+      <div class="center">
+        center
+      </div>
+      <div class="right">
+        right
+      </div>
+    </div>
+    <footer>footer</footer>
+  </body>
+</html>
